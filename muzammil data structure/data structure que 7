@@ -1,0 +1,158 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "c489c89e-9c2f-408e-b8a2-cecb32167cd4",
+   "metadata": {},
+   "source": [
+    "correct way to declare variable and assign value to it"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "2c525602-ee51-4497-a370-be4c7eaf877b",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "21\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "140717780997544"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "age=21\n",
+    "print(age)\n",
+    "id(age)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6afc93aa-3808-470e-83a4-2191a09e5f9f",
+   "metadata": {},
+   "source": [
+    "now assign value 25 to the variable named age"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "5cd079b2-d239-4cdf-ba7e-d27b6c685ce5",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "25\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "x=25\n",
+    "age=x\n",
+    "print(age)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d8d727e3-695e-4c51-af91-70ee4d53e458",
+   "metadata": {},
+   "source": [
+    "so in the above we saw that variable age was 21 which coverted in to the value of 25 by assigning age=x value of age become 25"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "4cb7c055-5efb-4ede-8784-c9766f7cff98",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "140717780997672"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "id(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "8a5d77ff-6d25-448d-a6b0-00977a3e13a2",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "140717780997672"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "id(age)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "991570d1-1e57-4a78-99a1-69cc225101cb",
+   "metadata": {},
+   "source": [
+    "so memory location of age and x variable become same as earlier memory location of age was different given above"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
