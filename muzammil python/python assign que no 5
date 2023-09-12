@@ -1,0 +1,99 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0b99a010-459e-46d0-8e66-3b608755c014",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#filter the number in given list divisible by 2 and 3 by filter function"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "edb3868f-5fba-4f78-83fe-882357a01afc",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3, 6, 9, 27, 60, 90, 120, 55, 46]"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l=[2,3,6,9,27,60,90,120,55,46]\n",
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "c4ae6e31-9bbf-4c5e-9a58-a1dd0e0152c0",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[6, 60, 90, 120]"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\n",
+    "list(filter(lambda x : x % 2==0 and x % 3==0 ,l))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cf6e0cef-98a9-4ee4-9366-eac3cec89208",
+   "metadata": {},
+   "source": [
+    "so in the above list[6, 60, 90, 120]  are the list of no divisible by both 2 and 3."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2d587717-6973-4861-9275-20555ddc92c3",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
