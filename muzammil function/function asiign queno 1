@@ -1,0 +1,96 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a3cc8c09-a5f6-4264-a09f-b450c4132cf8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#def keyword is used to create new function"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "4fd26d98-52df-4be7-858a-1197e1c0d943",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "l=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]\n",
+    "len(l)\n",
+    "def test() : \n",
+    "    pass\n",
+    "def test1(a):\n",
+    "    n=[]\n",
+    "    for i in a :\n",
+    "        if i%2!=0 :\n",
+    "            n.append(i)\n",
+    "    return n\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "04e82bd0-4591-4bd1-b567-193153b9bc4f",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25]"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "test1(l)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dec0c32e-ea34-42ad-8546-0bc6161d60ee",
+   "metadata": {},
+   "source": [
+    "so in this way we are able to extract odd no from the list usinf def function"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cd71bbf2-4162-43e4-a348-f492dda3133b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
