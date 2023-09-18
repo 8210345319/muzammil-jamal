@@ -1,0 +1,369 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9c4c9b0f-51d6-41c1-a7cf-ede7ba0a8a6b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#four pillars of oops are inheritance,polymorphism,encapsulationand abstraction"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "13a5988d-5487-4d99-923d-6de51555aab3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#inheritance"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "184de693-f2a6-48a7-8731-bd3b63c8385d",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "class marks:\n",
+    "    def test_marks(self):\n",
+    "        print(\"this is my graduation marks\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "aa874290-8567-4031-8f6f-03bdc492270e",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "class graduation(marks):\n",
+    "    pass"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "74c4a4a1-5e1a-4ccc-bc79-7953c77fea9e",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "graduation_obj=graduation()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "433ebf9d-4715-4b4b-8d36-596068ceec43",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "this is my graduation marks\n"
+     ]
+    }
+   ],
+   "source": [
+    "graduation_obj.test_marks()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1298a9d3-174d-4e45-b29d-019b0a890982",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#so in the above class 'marks' with its defined func got inherited with class 'graduation'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "65bb9aea-ee43-4331-9509-595a5515c8b3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#polymorphism"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "8d76e429-11f4-4122-b697-c1928cb6f6e4",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "def test(x,y,z):\n",
+    "     if x>y>z:\n",
+    "        return x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "65e2faf9-5a92-407b-8d6e-ab720b0f6f42",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "test(4,7,8)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "ec80f925-c4f0-4563-a49e-186f71cce62b",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "test(8,7,6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "696799fe-6523-4642-ac9e-44d1c2a4ea4b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#so in the above we got test value according to the function defined."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6f203981-6376-4237-bbed-5d7a1c9e0f75",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# incapsulation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "db2e8b94-6daf-4692-b70a-6b1873081d48",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "class certificate:\n",
+    "    def __init__(self,passingyear,marks,subject,division):\n",
+    "        self.__passingyear=passingyear\n",
+    "        self.__marks=marks\n",
+    "        self.__subject=subject\n",
+    "        self.__division=division\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "d8ea2c4a-f979-4a56-9d3d-f7c1e7239511",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "obj_certificate=certificate(2011, 76, \"math\",\"1st\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "6deea62e-8e6d-49f8-af74-da1be4bea723",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'1st'"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "obj_certificate._certificate__division"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "ffbec4db-8905-4c68-8605-6dbb46f73c07",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'math'"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "obj_certificate._certificate__subject"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "516e8331-d344-470d-8c0d-6cfcf4256e29",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#abstraction"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "e29fa80c-e441-4efe-b578-f3828d284454",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "import abc \n",
+    "class subject:\n",
+    "    @abc.abstractmethod\n",
+    "    def subject_marks(self):\n",
+    "        pass\n",
+    "    @abc.abstractmethod\n",
+    "    def subject_accuracy(self):\n",
+    "        pass"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "e5eebc76-c651-447c-860a-f6fbd2928c0a",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "class sociology(subject):\n",
+    "    def subject_marks(self):\n",
+    "        return\"it will give  details of subject marks\"\n",
+    "    def subject_accuracy(self):\n",
+    "        return\"it will give details of subject accuracy\"\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "9d8dce42-1007-45e5-aebf-f30a26244599",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'it will give  details of subject marks'"
+      ]
+     },
+     "execution_count": 66,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "subject=sociology()\n",
+    "subject.subject_marks()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "ddd99355-39fd-4ee3-ad6b-373090faef77",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'it will give details of subject accuracy'"
+      ]
+     },
+     "execution_count": 67,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "subject.subject_accuracy()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6d156a0e-1372-4c2b-94b4-2f7697bd098f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

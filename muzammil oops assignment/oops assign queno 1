@@ -1,0 +1,230 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "71b501ae-86d4-4183-a432-8db6dd8eb9cc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# class and object with respect to object oriented programming with example."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "405e4a76-3dad-48af-bea1-c3f8883f1739",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=45\n",
+    "print(type(x))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "21c7446b-dffd-4b30-a6ed-b0738241e55d",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=\"muz\"\n",
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "97190a0e-8c50-4fdc-9887-d6f987f69e0b",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "class variable :\n",
+    "    pass"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "fdf1c330-e2c6-4967-b9c5-7d0068eceecb",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "x=variable()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "034d648c-1abf-4f53-9752-345316724b1b",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class '__main__.variable'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "1c534a61-7165-42da-97c8-e41af2c95761",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "class variable:\n",
+    "    def pythonvariable_msg(self):\n",
+    "        print(\"these are python variables\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "b3c3193e-0048-49df-9a3b-1c8efb4244b7",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "z=variable()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "fc6cd16c-4946-4624-aca3-90ad4c5872b9",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "these are python variables\n"
+     ]
+    }
+   ],
+   "source": [
+    "z.pythonvariable_msg()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "26df1b16-60bb-4851-8f45-0d8269eb5c0a",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "y=variable()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "0dec80fb-90b8-42b6-8753-d413ccc9cb7e",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "these are python variables\n"
+     ]
+    }
+   ],
+   "source": [
+    "y.pythonvariable_msg()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d2d0eea9-c526-4c1b-89bb-79e47cf4b0c9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#so in this way above x is an object of class int'45' and class str'\"muz\"'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "01151933-d2e3-4daf-97d3-4501a49d8d6f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# in the below example we cosider x as an object of class 'variable'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "28844fde-c0d3-4a51-9333-015c68f0e3af",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#after that we changed the object to z and to y as class same which is \"variable\"."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
