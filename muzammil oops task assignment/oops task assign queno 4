@@ -1,0 +1,229 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2a69bd88-840f-4106-b990-9b672897365b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#getters are the method used in oops to access a class's private attributes."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e80ecee2-8493-4b64-b189-38146f258460",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#setters is method used to set property's value and set the value of private attribute in class."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "46715535-9d83-4382-b792-d67c2eb1eef1",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "class variable:\n",
+    "    def __init__(self,x,y,z):\n",
+    "        self.__x=x\n",
+    "        self.y=y\n",
+    "        self.z=z\n",
+    "        \n",
+    "    @property\n",
+    "    def x_access(self):\n",
+    "            return self.__x\n",
+    "        \n",
+    "    @x_access.setter\n",
+    "    def x_set(self,value):\n",
+    "        if value <= 50:\n",
+    "            pass\n",
+    "        else:\n",
+    "            self.__x=value\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "8b990378-d593-485e-8384-7f8af52620e6",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "var=variable(\"43\",\"56\",\"78\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "6eba6a26-db94-4ce9-89b2-6ca5217cd800",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'56'"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "var.y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "4edb5f30-517e-4a2a-815a-0820962ac022",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'43'"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "var.x_access"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "66fc2aee-131b-4ba3-a802-d36d7ff52902",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "var.x_set=44"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "1e73ee01-d52a-4da5-b570-81c98f9b6bf3",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'43'"
+      ]
+     },
+     "execution_count": 66,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "var.x_access"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "92ae97b7-c113-4817-930a-f9580ad839f6",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "var.x_set=56"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "a98bc28f-7203-4bcb-8912-345bc94ca83c",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "56"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "var.x_access"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f69363dd-946f-4309-8109-3a5a9c219996",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#so in setter we are able to access the self__x which is private."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "13a5fcc5-b649-4964-9db8-dd3859413ca2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#in getter function vlaue of x chnged to \"56' from '43' but not not changed to '44' as condition applied."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b7bcc539-d185-430d-8f4b-1380895055c4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
