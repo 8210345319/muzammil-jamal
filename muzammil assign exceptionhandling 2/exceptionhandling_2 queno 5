@@ -1,0 +1,111 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "019dd051-6fb8-423f-a3e7-8494b7d80ede",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#in python we use 'import' when we import any specific module in python ,when importing any module and there is trouble in importing modules to progreamme then chance of import error is possible."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "0aa3513f-0860-4376-b314-12027e2ec6a0",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'nompy'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[6], line 1\u001b[0m\n\u001b[1;32m----> 1\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mnompy\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m \u001b[38;5;21;01mnp\u001b[39;00m\n\u001b[0;32m      2\u001b[0m x\u001b[38;5;241m=\u001b[39mnp\u001b[38;5;241m.\u001b[39marray([\u001b[38;5;241m2\u001b[39m,\u001b[38;5;241m3\u001b[39m,\u001b[38;5;241m4\u001b[39m])\n\u001b[0;32m      3\u001b[0m \u001b[38;5;28mprint\u001b[39m(x)\n",
+      "\u001b[1;31mModuleNotFoundError\u001b[0m: No module named 'nompy'"
+     ]
+    }
+   ],
+   "source": [
+    "import nompy as np\n",
+    "x=np.array([2,3,4])\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a514599b-db2d-4542-865e-336a11e36207",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#as there is spelling mistake there is not any module named as nompy."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "f33518d7-c489-4890-9576-5f5c3e107ecc",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2 3 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as y\n",
+    "x=y.array([2,3,4])\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1020b4f3-92e6-412e-89e0-a3f169284dd5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#after having speeling correction from nompy to 'numpy' we are able to import."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "589b2acd-087d-47db-a8c9-dd691bb41885",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
