@@ -1,0 +1,144 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "573d8385-3a5f-4a23-bb0a-3a6c3f3d570f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#look up error exception is the base class for errors raised when something can't be found."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "5b7845a9-a913-47bd-8cf3-9b85f2f83aa9",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "IndexError",
+     "evalue": "list index out of range",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mIndexError\u001b[0m                                Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[1], line 2\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;28mlist\u001b[39m\u001b[38;5;241m=\u001b[39m[\u001b[38;5;241m1\u001b[39m,\u001b[38;5;241m4\u001b[39m,\u001b[38;5;241m5\u001b[39m,\u001b[38;5;241m6\u001b[39m,\u001b[38;5;241m7\u001b[39m]\n\u001b[1;32m----> 2\u001b[0m \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;28mlist\u001b[39m[\u001b[38;5;241m6\u001b[39m])\n",
+      "\u001b[1;31mIndexError\u001b[0m: list index out of range"
+     ]
+    }
+   ],
+   "source": [
+    "list=[1,4,5,6,7]\n",
+    "print(list[6])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "0a9ad6f9-5f1f-4c4e-8ddf-e9680ad6c95a",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "list index out of range\n"
+     ]
+    }
+   ],
+   "source": [
+    "try:\n",
+    "    list=[1,4,5,6,7]\n",
+    "    print(list[6])\n",
+    "except IndexError as e:\n",
+    "    print(e)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "0d2b221f-9a32-44a3-bfe3-51cc9ae63b69",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "KeyError",
+     "evalue": "'tuesday1'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[19], line 2\u001b[0m\n\u001b[0;32m      1\u001b[0m days\u001b[38;5;241m=\u001b[39m{\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124msunday1\u001b[39m\u001b[38;5;124m\"\u001b[39m:\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mmath\u001b[39m\u001b[38;5;124m\"\u001b[39m,\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mmonday2\u001b[39m\u001b[38;5;124m\"\u001b[39m:\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124marts\u001b[39m\u001b[38;5;124m\"\u001b[39m,\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mtuesday3\u001b[39m\u001b[38;5;124m\"\u001b[39m:\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mscience\u001b[39m\u001b[38;5;124m\"\u001b[39m}\n\u001b[1;32m----> 2\u001b[0m \u001b[38;5;28mprint\u001b[39m(days[\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mtuesday1\u001b[39m\u001b[38;5;124m\"\u001b[39m])\n",
+      "\u001b[1;31mKeyError\u001b[0m: 'tuesday1'"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "    days={\"sunday1\":\"math\",\"monday2\":\"arts\",\"tuesday3\":\"science\"}\n",
+    "    print(days[\"tuesday1\"])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "4b5ea6c8-180d-4398-b62a-b230d4999b1b",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "day tueday1 does not exist\n"
+     ]
+    }
+   ],
+   "source": [
+    " days={\"sunday1\":\"math\",\"monday2\":\"arts\",\"tuesday3\":\"science\"}\n",
+    "try:\n",
+    "    print('subject on tuesday1 is:',days[\"tuesday1\"])\n",
+    "except KeyError:\n",
+    "        print(\"day tueday1 does not exist\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ccb39349-489a-4a5e-9a41-c0bbe3478930",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#so in the above is example of indexerror and keyerror."
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
