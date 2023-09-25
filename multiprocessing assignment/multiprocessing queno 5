@@ -1,0 +1,24 @@
+# this the pool of worker process in python
+
+
+import time
+from multiprocessing import Pool
+def cube(x):
+    print(f"start process:{x}")
+    cube=x*x*x
+    print(f"cube {x}: {cube}")
+    time.sleep(1)
+    print(f"end process:{x}")
+if __name__=="__main__":
+    starttime=time.time()
+    pool=Pool()
+    pool.map(cube,range(0,7))
+    pool.close()
+    endtime=time.time()
+    print(f"Time taken {endtime-starttime} seconds")
+       
+
+
+
+
+
