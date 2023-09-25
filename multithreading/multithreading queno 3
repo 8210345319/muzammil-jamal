@@ -1,0 +1,181 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "daf9829d-29f2-48a9-93a8-84c68dc3e1fd",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "import threading\n",
+    "class student(threading.Thread):\n",
+    "    def __init__(self,thread_rank,thread_marks):\n",
+    "        threading.Thread.__init__(self)\n",
+    "        self.thread_rank=thread_rank\n",
+    "        self.thread_marks=thread_marks\n",
+    "    def run(self):\n",
+    "        print(\"Thread_rank:\"+str(self.thread_rank) +\" \"+ \"Thread_marks: \"+str(self.thread_marks))\n",
+    "thread_1=student(\"thread1\",1)\n",
+    "thread_2=student(\"thread2\",2)\n",
+    "            "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "a1faa7d6-655e-466c-9bc6-849d2560f8bf",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Thread_rank:thread1 Thread_marks: 1\n",
+      "Thread_rank:thread2 Thread_marks: 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "thread_1.start()\n",
+    "thread_2.start()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "953b436d-720f-4675-82e1-5d773d391f9e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# so here run() is used to overrides function in subclass and start() is also used as starting for threading."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "3e21b1ce-8b68-4caa-bc0e-21d50e0e647f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "is equal to 1: 1\n",
+      "is equal to 2: 2\n",
+      "\n",
+      "is equal to 1: 1\n",
+      "is equal to 2: 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "def type_1(x):\n",
+    "    print('is equal to 1:',x)\n",
+    "def type_2(x):\n",
+    "    print('is equal to 2:',x)\n",
+    "thread1=threading.Thread(target=type_1,args=(1,))\n",
+    "thread2=threading.Thread(target=type_2,args=(2,))\n",
+    "thread1.start()\n",
+    "thread1.join()\n",
+    "thread2.start()\n",
+    "thread2.join()\n",
+    "print()\n",
+    "thread3=threading.Thread(target=type_1,args=(1,))\n",
+    "thread4=threading.Thread(target=type_2,args=(2,))\n",
+    "thread3.start()\n",
+    "thread4.start()\n",
+    "thread3.join()\n",
+    "thread4.join()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ee2c1333-8f1e-4116-b1c5-2f3c6c2a4ad4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#so thread again joined to main thread so they printed in the same order as called as printed above."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "e242178e-272c-41c4-9c30-a943ea2083ef",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "is thread1 alive: False\n",
+      "is thread2 alive: False\n",
+      "\n",
+      "is equal to 2: 2\n",
+      "is equal to 1: 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "import time\n",
+    "def type_1(x):\n",
+    "    time.sleep(5)\n",
+    "    print('is equal to 1:',x)\n",
+    "def type_2(x):\n",
+    "    print('is equal to 2:',x)\n",
+    "thread1=threading.Thread(target=type_1,args=(1,))\n",
+    "thread2=threading.Thread(target=type_2,args=(2,))\n",
+    "print(\"is thread1 alive:\",thread1.is_alive())\n",
+    "print(\"is thread2 alive:\",thread2.is_alive())\n",
+    "print()\n",
+    "thread1.start()\n",
+    "thread2.start()\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7ef2d77f-7ddd-41b9-bc61-93a4622e67c4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#so this is the way we can check thread is running or not."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "664ff5c3-c025-4bd9-b375-b02b8df85543",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
