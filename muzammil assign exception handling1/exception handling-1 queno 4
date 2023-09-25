@@ -1,0 +1,134 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a3b047a5-4136-4990-9dca-696252233536",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#using try,else and raise"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "704f349f-e917-4a94-afc7-51ff2d2f5d1d",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "15\n",
+      "200\n",
+      "int values are allowed only\n",
+      "all done!\n"
+     ]
+    }
+   ],
+   "source": [
+    "def multiplynumbers(num1,num2):\n",
+    "    try:\n",
+    "        if (isinstance(num1,int))and(isinstance(num2,int)):\n",
+    "            return(num1*num2)\n",
+    "        else:\n",
+    "            raise Exception('int values are allowed only')\n",
+    "    except Exception as e:\n",
+    "        return e\n",
+    "print(multiplynumbers(3,5))\n",
+    "print(multiplynumbers(4,50))\n",
+    "print(multiplynumbers('r','e'))\n",
+    "print('all done!')      "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "86a15260-6a8d-4527-91be-ce8456d7f72a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#using finally"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "879b2975-13c4-4c07-9bac-a3305e20473a",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "allowed\n",
+      "15\n",
+      "allowed\n",
+      "200\n",
+      "allowed\n",
+      "int values are allowed only\n",
+      "all done!\n"
+     ]
+    }
+   ],
+   "source": [
+    "def multiplynumbers(num1,num2):\n",
+    "    try:\n",
+    "        if (isinstance(num1,int))and(isinstance(num2,int)):\n",
+    "            return(num1*num2)\n",
+    "        else:\n",
+    "            raise Exception('int values are allowed only')\n",
+    "    except Exception as e:\n",
+    "        return e\n",
+    "    finally:\n",
+    "        print('allowed')\n",
+    "print(multiplynumbers(3,5))\n",
+    "print(multiplynumbers(4,50))\n",
+    "print(multiplynumbers('r','e'))\n",
+    "print('all done!')      "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "04289477-187d-4fe7-afb4-38433765afba",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "30028e76-602b-4130-9f26-e8a8a3cc4cd5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
