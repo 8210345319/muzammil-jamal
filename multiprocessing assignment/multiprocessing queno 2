@@ -1,0 +1,105 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "64dd6563-fe10-470b-baa3-7d8f07aff01c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Multithreading refers to the ability of processor to execute multiple threads concurrently."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "949575db-ad7e-4cd1-849b-e088273bb112",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Under this each thread runs a process."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5877bd00-72df-4435-bbc2-ccf1c70f9e3d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# whereas multiprocessing refers to ability of system to run multiple processors in parallel.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4d3749c0-ff5e-49be-a87b-4979381db415",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Under this each processor can run one or more threads."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5d01653b-f33f-4140-9cbc-3e5ce62eab89",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Multiprocessing is all about running several process at same time.."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "be2ae2de-2688-4f52-9284-95b248f73682",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Whereas multithreading is all about running several threads at same time."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "36b4a8d8-b09c-4b54-96ec-f9c152e186fc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#process,lock,queue,pool are import keyword use in multiprocessing"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fbf64280-bd8e-4899-aeb9-f3de5997132f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#where as lock,import threading,thread,time are important keyword used in multithreading"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

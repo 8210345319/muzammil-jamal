@@ -1,0 +1,83 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5d9ac0c1-6c90-46f6-b764-1796d72e6325",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Multiprocessing in python refers to ability to support more than one processor at same time."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "67b372ab-3fc4-47a3-b51c-3df02d0a1d47",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#In computer if assigned several processes at same time, it will have to interrupt each task and switch briefly to another."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2393d66e-d54f-4910-8d1d-a3d18ac1d1c0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#But in multiprocessing system has multiprocessor and multicore processor ."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "28eeec8e-04f8-4643-8187-01db3d0e0973",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Under this computer can easily executes several tasks at once with each task using its own processor."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "106f5344-d86a-4bd0-9660-5c558650e1d6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Process,lock queue and pool essential parts used as functioning in multiprocessing programme in python."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0fe35a19-09cf-4a69-9e34-2dbbc7789cc3",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
